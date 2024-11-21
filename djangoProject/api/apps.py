@@ -17,7 +17,7 @@ def run_initialization_script(sender, **kwargs):
     
     API_KEY = settings.FREECURRENCYAPI_KEY
     if not API_KEY:
-        print("Error: Lack of API key. Make sure that API key is located inside of .env.local file.")
+        print("Error: Lack of API key. Make sure that API key is located inside of .env file.")
         return
 
     client = freecurrencyapi.Client(API_KEY)
